@@ -8,6 +8,12 @@
     <meta name="description" content="Store front for Maija's Vegan Pie Shop">
     <!-- layout that looks great on all types of devices aka responsive layout -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon here -->
+    <link rel="icon" type="img/png" href="favicon.png">
+    <!-- display correctly is IE9 or older/less -->
+    <!-- [if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <![endif] -->
     <title>Document</title>
     <style>
         body {
@@ -16,6 +22,7 @@
             margin-left: auto;
             margin-right: auto;
             background-color: #cefcf9;
+            background-image: url('img/pattern.png');
         }
 
         #mainheader {
@@ -46,9 +53,28 @@
             margin-bottom: 20px;
         }
 
+        #maijaimage {
+            margin: 0 0 0 -40px;
+        }
+        #MaijaFigCaption {
+            margin: 0 0 0 -40px;
+        }
+
         footer {
             clear: both;
             width: 100%;
+        }
+
+        /* makes sure that elements display correctly on the page */
+        header,
+        section,
+        footer,
+        aside,
+        nav,
+        main,
+        article,
+        figure {
+            display: block;
         }
     </style>
 </head>
@@ -56,7 +82,7 @@
 <body>
     <header id="mainheader">
         <nav>
-            header goes here
+            <img src="img/pie.png" height="55" />
         </nav>
         <h1>Welcome to Maija's Vegan Pie Shop!</h1>
     </header>
@@ -64,6 +90,7 @@
     <!-- layout element just used for layout purposes -->
     <div style="width: 1000px;margin-left: auto;margin-right: auto;">
         <aside id="leftmenu">
+            <img src="img/maijalogo.png" />
             <header>
                 <h4 style="text-align:center;">Browse our pies</h4>
             </header>
@@ -78,7 +105,12 @@
                         Welcome to Maija's Vegan Pie Shop!
                     </h1>
                 </header>
-                <p style="font-family: verdana;font-weight: bold;color: #B09398;">
+                <figure>
+                    <img id="maijaimage" src="img/maija.jpg" width="700" alt="Maija in her pie shop" />
+                    <figcaption id="MaijaFigCaption">Maija in her pie shop</figcaption>
+                </figure>
+                <h2>Our history</h2>
+                <p style="font-family: verdana;">
                     For many years, <strong>Maija</strong> has been baking the most delicious vegan pies at her home. In
                     2013,
                     we opened our first store in <i>Helsinki (Finland)</i> in a cosy little street the Grand Market.
@@ -95,13 +127,15 @@
                 <h3 style="font-family:verdana;">Our weekly promotions</h3>
                 <h4>Vegan Cheese Cake</h4>
                 12,95€ - serves 4<br>
-                <img src="/img/cheesecake.jpg" width="500" height="300">
+                <img src="https://gillcleerenpluralsight.blob.core.windows.net/files/cheesecake.jpg" width="500" height="300" />
                 <br>
             </section>
         </main>
         <footer>
-            <p>Our address is <address> Maija's Vegan Pie Shop - Leivontatie 12 Helsinki Finland</address></p>
-            <small>Copyright 2021 Maija's Vegan Pie Shop - All Rights reserved</small> 
+            <p>Our address is
+            <address> Maija's Vegan Pie Shop - Leivontatie 12 Helsinki Finland</address>
+            </p>
+            <small>Copyright 2021 Maija's Vegan Pie Shop - All Rights reserved</small>
         </footer>
     </div>
 
