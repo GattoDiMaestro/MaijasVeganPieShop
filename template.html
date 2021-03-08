@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Maija's Vegan Pie Shop">
+    <meta name="description" content="Store front for Maija's Vegan Pie Shop">
+    <!-- layout that looks great on all types of devices aka responsive layout -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon here -->
+    <link rel="icon" type="img/png" href="favicon.png">
+    <!-- display correctly is IE9 or older/less -->
+    <!-- [if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <![endif] -->
+    <title>Document</title>
+    <style>
+        body {
+            margin-top: 0px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #cefcf9;
+            background-image: url('img/pattern.png');
+        }
+
+        #mainheader {
+            background-color: #9B6A6C;
+        }
+
+        nav {
+            height: 60px;
+            width: 1000px;
+            margin: 0 auto 20px;
+        }
+
+        #leftmenu {
+            float: left;
+            width: 30%;
+            margin-bottom: 20px;
+        }
+
+        .searchbox {
+            padding: 5px;
+            margin: 10px 10px;
+            width: 200px;
+        }
+
+        #main {
+            float: right;
+            width: 70%;
+            margin-bottom: 20px;
+        }
+
+        #maijaimage {
+            margin: 0 0 0 -40px;
+        }
+
+        #MaijaFigCaption {
+            margin: 0 0 0 -40px;
+        }
+
+        footer {
+            clear: both;
+            width: 100%;
+        }
+
+        /* makes sure that elements display correctly on the page */
+        header,
+        section,
+        footer,
+        aside,
+        nav,
+        main,
+        article,
+        figure {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="mainheader">
+        <nav>
+            <img src="img/pie.png" height="55" />
+        </nav>
+        <h1>Welcome to Maija's Vegan Pie Shop!</h1>
+    </header>
+
+    <!-- layout element just used for layout purposes -->
+    <div style="width: 1000px;margin-left: auto;margin-right: auto;">
+        <aside id="leftmenu">
+            <img src="img/maijalogo.png" />
+            <header>
+                <h4 style="text-align:center;">Browse our pies</h4>
+            </header>
+            <!-- search box for the website. With class attribute can group elements within the page -->
+            <input type="search" class="searchbox" placeholder="Search our store" />
+        </aside>
+
+        <main id="main">
+   
+        </main>
+        <footer>
+            <p>Our address is
+            <address> Maija's Vegan Pie Shop - Leivontatie 12 Helsinki Finland</address>
+            </p>
+            <small>Copyright 2021 Maija's Vegan Pie Shop - All Rights reserved</small>
+        </footer>
+    </div>
+
+</body>
+
+</html>
