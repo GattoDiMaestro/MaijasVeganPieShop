@@ -10,71 +10,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- favicon here -->
     <link rel="icon" type="img/png" href="favicon.png">
+    <!-- css stuff here -->
+    <link rel="stylesheet" href="css/style.css">
+
     <!-- display correctly is IE9 or older/less -->
     <!-- [if lt IE 9]>
           <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <![endif] -->
-    <title>Document</title>
-    <style>
-        body {
-            margin-top: 0px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: #cefcf9;
-            background-image: url('img/pattern.png');
-        }
-
-        #mainheader {
-            background-color: #9B6A6C;
-        }
-
-        nav {
-            height: 60px;
-            width: 1000px;
-            margin: 0 auto 20px;
-        }
-
-        #leftmenu {
-            float: left;
-            width: 30%;
-            margin-bottom: 20px;
-        }
-
-        .searchbox {
-            padding: 5px;
-            margin: 10px 10px;
-            width: 200px;
-        }
-
-        #main {
-            float: right;
-            width: 70%;
-            margin-bottom: 20px;
-        }
-
-        /* Important for the figure */
-        figure {
-            margin: 0;
-        }
-
-        footer {
-            clear: both;
-            width: 100%;
-        }
-
-        /* makes sure that elements display correctly on the page */
-        header,
-        section,
-        footer,
-        aside,
-        nav,
-        main,
-        article,
-        figure {
-            display: block;
-        }
-    </style>
+    <title>Maija's Vegan Pie Shop - Front Page</title>
 </head>
 
 <body>
@@ -98,34 +41,40 @@
         <main id="main">
             <article>
                 <header>
-                    <h1 style="font-size: 40px;color: #9B6A6C;">
+                    <h1 class="fp-h1">
                         Welcome to Maija's Vegan Pie Shop!
                     </h1>
                 </header>
-                <figure>
-                    <img src="img/maija.jpg" width="700" alt="Maija in her pie shop" />
-                    <figcaption>Maija in her pie shop</figcaption>
-                </figure>
-                <h2>Our history</h2>
-                <p style="font-family: verdana;">
-                    For many years, <strong>Maija</strong> has been baking the most delicious vegan pies at her home. In
-                    2013,
-                    we opened our first store in <i>Helsinki (Finland)</i> in a cosy little street the Grand Market.
-                    People from all over the world fell in love with the soft cakes, heavenly cakes, spicy apple pies...
-                    <i>store became a success in no time.</i> <br><br>In 2015, no less than 100 pies were sold every day
-                    and Maija's
-                    Vegan Pie Shop moved into a larger building. After receiving many requests, it became clear that our
-                    next step was making it possible to order pies from the comfort of your own home and
-                    from anywhere in the world. You are now looking at the result of this: our very own webstore,
-                    making it possible to order Bethany's delicious pies whenever oyu feel like it!
-                </p>
+                <div id="maincontent">
+                    <figure>
+                        <img src="img/maija.jpg" width="700" alt="Maija in her pie shop" />
+                        <figcaption>Maija in her pie shop</figcaption>
+                    </figure>
+                    <h2>Our history</h2>
+                    <p style="font-family: verdana;">
+                        For many years, <strong>Maija</strong> has been baking the most delicious vegan pies at her
+                        home. In
+                        2013,
+                        we opened our first store in <i>Helsinki (Finland)</i> in a cosy little street the Grand Market.
+                        People from all over the world fell in love with the soft cakes, heavenly cakes, spicy apple
+                        pies...
+                        <i>store became a success in no time.</i> <br><br>In 2015, no less than 100 pies were sold every
+                        day
+                        and Maija's
+                        Vegan Pie Shop moved into a larger building. After receiving many requests, it became clear that
+                        our
+                        next step was making it possible to order pies from the comfort of your own home and
+                        from anywhere in the world. You are now looking at the result of this: our very own webstore,
+                        making it possible to order Bethany's delicious pies whenever oyu feel like it!
+                    </p>
+                </div>
             </article>
-            <section>
+            <section id="mainsection">
                 <h3 style="font-family:verdana;">Our weekly promotions</h3>
                 <h4>Vegan Cheese Cake</h4>
                 12,95€ - serves 4<br>
-                <img src="https://gillcleerenpluralsight.blob.core.windows.net/files/cheesecake.jpg" width="500"
-                    height="300" />
+                <img src="https://gillcleerenpluralsight.blob.core.windows.net/files/cheesecake.jpg" width="700"
+                     />
                 <br>
             </section>
         </main>

@@ -4,9 +4,16 @@ body {
     margin-left: auto;
     margin-right: auto;
     background-color: #cefcf9;
-    background-image: url('img/pattern.png');
+    background-image: url("../img/pattern.png");
 }
-
+h1,
+h2,
+h3 {
+    color: #9B6A6C;
+}
+.fp-h1 {
+    font-size: 40px;
+}
 #mainheader {
     background-color: #9B6A6C;
 }
@@ -33,9 +40,10 @@ nav {
     float: right;
     width: 70%;
     margin-bottom: 20px;
+
 }
 
-/* Important for the figure */
+/* Important for the figure fix */
 figure {
     margin: 0;
 }
@@ -44,6 +52,7 @@ footer {
     clear: both;
     width: 100%;
 }
+
 
 /* makes sure that elements display correctly on the page */
 header,
@@ -56,3 +65,26 @@ article,
 figure {
     display: block;
 }
+
+table,
+td,
+th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+td {
+    background-color: white;
+}
+
+th {
+    background-color: #9B6A6C;
+}
+
+hr.hrclass {
+    background-color: black;
+    width: 100%;
+    height: 1px;
+    /* border-top: 0.1px solid black */
+  }
